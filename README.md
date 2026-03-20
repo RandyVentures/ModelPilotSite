@@ -1,26 +1,23 @@
 # ModelPilot Site
 
-Static marketing + policy site for ModelPilot, intended for GitHub Pages.
+Public information repository for ModelPilot.
 
-## Local preview
+## About
 
-From this folder:
+ModelPilot is a macOS app focused on curated AI model updates, practical examples, and weekly release tracking.
 
-```bash
-python3 -m http.server 8080
-```
+Primary app repo:
 
-Open <http://127.0.0.1:8080>.
+- [ModelPilot](https://github.com/RandyVentures/ModelPilot)
 
-## Publish to GitHub Pages
+## Privacy Policy
 
-1. Create a new public repo named `modelpilot-site` under your GitHub account.
-2. Push this folder contents to that repo.
-3. In GitHub repo settings: `Pages` -> `Deploy from a branch` -> `main` / `/root`.
-4. Site URL should be:
+ModelPilot is designed to minimize data collection.
 
-`https://randyventures.github.io/modelpilot-site/`
+- The app does not require user accounts by default.
+- Preferences are stored locally on device.
+- Remote catalog refresh requests may be logged by the hosting provider.
 
-Privacy policy URL:
+Support:
 
-`https://randyventures.github.io/modelpilot-site/privacy.html`
+- [Open a support issue](https://github.com/RandyVentures/ModelPilot/issues/new)
