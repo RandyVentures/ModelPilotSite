@@ -20,7 +20,7 @@ ModelPilot is designed to minimize data collection.
 
 Policy page:
 
-- https://randyventures.github.io/ModelPilotSite/privacy.html
+- https://randyventures.github.io/ModelPilotSite/privacy/
 
 - The app does not require user accounts by default.
 - Preferences are stored locally on device.
