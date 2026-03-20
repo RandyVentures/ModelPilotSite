@@ -88,6 +88,19 @@ body {
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
 }
 
+.cta-row {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cta-secondary {
+  color: var(--text);
+  border: 1px solid var(--panel-border);
+  background: #132544;
+}
+
 .grid {
   margin-top: 24px;
   display: grid;
@@ -112,6 +125,19 @@ body {
   color: var(--muted);
 }
 
+.support-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inline-link {
+  display: inline-block;
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .footer {
   margin-top: 28px;
   color: var(--muted);
@@ -127,5 +153,22 @@ body {
 }
 
 .policy h1 {
+  margin-top: 0;
+}
+
+.support-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.support-section {
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  background: #0d1f39;
+  padding: 14px;
+}
+
+.support-section h2 {
   margin-top: 0;
 }
