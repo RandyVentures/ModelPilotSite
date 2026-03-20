@@ -3,9 +3,12 @@
   --panel: #101f37;
   --panel-border: #2f466d;
   --text: #e5ecf8;
-  --muted: #9eb0cc;
+  --muted: #c3d1e7;
   --accent: #4b86ff;
   --accent-2: #7bb1ff;
+  --link: #d9e7ff;
+  --link-hover: #ffffff;
+  --focus-ring: #94c0ff;
 }
 
 * {
@@ -28,6 +31,40 @@ body {
     var(--bg);
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  z-index: 1000;
+  background: #ffffff;
+  color: #0a1a31;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 700;
+}
+
+.skip-link:focus-visible {
+  left: 10px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
 .wrap {
   max-width: 1080px;
   margin: 0 auto;
@@ -48,9 +85,17 @@ body {
 }
 
 .nav a {
-  color: var(--muted);
+  color: var(--text);
   text-decoration: none;
   margin-left: 16px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .hero {
@@ -133,8 +178,8 @@ body {
 
 .inline-link {
   display: inline-block;
-  color: var(--accent-2);
-  text-decoration: none;
+  color: var(--link);
+  text-decoration: underline;
   font-weight: 700;
 }
 
@@ -171,4 +216,21 @@ body {
 
 .support-section h2 {
   margin-top: 0;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav a {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
 }
