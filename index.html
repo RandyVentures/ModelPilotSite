@@ -3,60 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ModelPilot is a macOS app for curated AI model release tracking, weekly updates, comparisons, and runnable examples."
+    />
     <title>ModelPilot</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <main id="main-content" class="wrap">
-      <nav class="nav" aria-label="Primary">
-        <div class="brand">ModelPilot</div>
-        <div>
+
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="./index.html" aria-label="ModelPilot home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>ModelPilot</span>
+        </a>
+        <nav class="header-nav" aria-label="Primary">
+          <a href="./support/index.html">Support</a>
+          <a href="./privacy/">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Model release intelligence for people shipping with AI</p>
+            <h1>Track AI releases with context, comparisons, and real examples.</h1>
+            <p class="hero-lede">
+              ModelPilot turns fast-moving model launches into a calmer weekly surface for developers,
+              designers, analysts, and writers who need to decide what changed and what to try next.
+            </p>
+            <div class="cta-row">
+              <a class="cta" href="./support/index.html">Contact Support</a>
+              <a class="cta cta-secondary" href="./privacy/">Read Privacy Policy</a>
+            </div>
+          </div>
+
+          <div class="hero-panel" aria-label="ModelPilot app overview">
+            <img
+              class="hero-shot"
+              src="./assets/this-week.png"
+              alt="ModelPilot This Week screen showing curated AI updates and trust labels."
+            />
+            <div class="hero-caption">
+              <p class="eyebrow">This Week</p>
+              <p>Highlights, full feed, trust labels, and weekly context in one fast scan.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="shell split-section">
+          <div class="section-intro">
+            <p class="eyebrow">What it does</p>
+            <h2>One calm surface for a noisy release cycle.</h2>
+          </div>
+          <div class="feature-list">
+            <article>
+              <h3>This Week</h3>
+              <p>Scan the updates that matter now, with enough context to act without reading every launch thread.</p>
+            </article>
+            <article>
+              <h3>Explore</h3>
+              <p>Compare models by intent and capability so you can choose faster and with fewer blind spots.</p>
+            </article>
+            <article>
+              <h3>Editorial workflow</h3>
+              <p>Curate overrides, validate changes, and keep the catalog aligned with a real operator workflow.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contrast">
+        <div class="shell gallery-shell">
+          <div class="section-intro gallery-intro">
+            <p class="eyebrow">Inside the app</p>
+            <h2>See the product, not just the promise.</h2>
+            <p>
+              The app combines weekly updates, model discovery, and detailed runnable examples in a
+              single macOS workflow.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <article class="shot-card shot-card-wide">
+              <img
+                src="./assets/explore.png"
+                alt="ModelPilot Explore screen showing a search-first model finder and featured model cards."
+              />
+              <div class="shot-copy">
+                <p class="eyebrow">Explore</p>
+                <h3>Find the right model by task, not by hype.</h3>
+                <p>Search by intent, compare fit, and move from need to candidate faster.</p>
+              </div>
+            </article>
+
+            <article class="shot-card">
+              <img
+                src="./assets/detail.png"
+                alt="ModelPilot detail screen showing an AI update summary, when-to-use guidance, and curated examples."
+              />
+              <div class="shot-copy">
+                <p class="eyebrow">Detail</p>
+                <h3>Read what changed and when it matters.</h3>
+                <p>Each update carries context, usage guidance, and editorial framing.</p>
+              </div>
+            </article>
+
+            <article class="shot-card">
+              <img
+                src="./assets/examples.png"
+                alt="ModelPilot examples screen showing detailed prompts and outputs for analysts and writers."
+              />
+              <div class="shot-copy">
+                <p class="eyebrow">Examples</p>
+                <h3>Learn through concrete examples.</h3>
+                <p>Runnable examples show setup, ask, and outcome instead of vague feature claims.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-section">
+        <div class="shell final-band">
+          <div>
+            <p class="eyebrow">Support and trust</p>
+            <h2>Need help or policy details?</h2>
+            <p>
+              ModelPilot keeps the utility links visible because support and privacy are part of the product,
+              not afterthoughts.
+            </p>
+          </div>
+          <div class="final-actions">
+            <a class="cta" href="./support/index.html">Open Support</a>
+            <a class="text-link" href="./privacy/">View Privacy Policy</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>© ModelPilot. Curated AI model tracking for macOS.</p>
+        <div class="footer-links">
           <a href="./support/index.html">Support</a>
           <a href="./privacy/">Privacy</a>
         </div>
-      </nav>
-
-      <section class="hero">
-        <h1>Track AI model releases with context, not noise.</h1>
-        <p>
-          ModelPilot is a macOS app for curated weekly AI updates, model comparisons,
-          and actionable examples for developers, designers, analysts, and writers.
-        </p>
-        <div class="cta-row">
-          <a class="cta" href="./support/index.html">Get Support</a>
-          <a class="cta cta-secondary" href="./privacy/">
-            Privacy Policy
-          </a>
-        </div>
-      </section>
-
-      <section class="grid">
-        <article class="card">
-          <h2>This Week</h2>
-          <p>Highlights vs full feed, trust labels, and week-by-week navigation.</p>
-        </article>
-        <article class="card">
-          <h2>Explore</h2>
-          <p>Find the right model by intent, strengths, and practical fit.</p>
-        </article>
-        <article class="card">
-          <h2>Operator Workflow</h2>
-          <p>Curate examples in overrides, validate, sync, and ship through Git.</p>
-        </article>
-        <article class="card support-card">
-          <h2>Need Help?</h2>
-          <p>
-            Visit the support center for contact details, troubleshooting, and App Store support
-            information.
-          </p>
-          <a class="inline-link" href="./support/index.html">Open Support Center</a>
-        </article>
-      </section>
-
-      <p class="footer">
-        © ModelPilot. All rights reserved.
-      </p>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>
